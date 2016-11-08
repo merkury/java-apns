@@ -179,6 +179,14 @@ public final class PayloadBuilder {
     }
 
     /**
+     * @return  this
+     */
+    public PayloadBuilder addMutableContent() {
+        aps.put("mutable-content", 1);
+        return this;
+    }
+    
+    /**
      * Sets the notification badge to be displayed next to the
      * application icon.
      *
